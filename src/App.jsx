@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import {
@@ -66,9 +67,40 @@ const projects = [
 ];
 
 export default function App() {
+
   const [active, setActive] = useState(null);
 
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_hmt1sv9",
+      "template_ql2clum",
+      formRef.current,
+      "8jcRPbjVGvSRsB2PZ"
+    )
+    .then(() => {
+
+      alert("Message sent successfully!");
+
+      formRef.current.reset();
+
+    })
+    .catch((error) => {
+
+      console.log(error);
+
+      alert("Failed to send message.");
+
+    });
+
+  };
+
   return (
+
     <div className="app">
 
       {/* NAVBAR */}
@@ -95,75 +127,76 @@ export default function App() {
 
       </nav>
 
+      {/* HERO */}
       <section className="hero">
 
-  {/* BACKGROUND AI ANIMATION */}
-  <div className="heroBackground">
+        <div className="heroBackground">
 
-    <div className="neuron neuron1"></div>
-    <div className="neuron neuron2"></div>
-    <div className="neuron neuron3"></div>
-    <div className="neuron neuron4"></div>
-    <div className="neuron neuron5"></div>
+          <div className="neuron neuron1"></div>
+          <div className="neuron neuron2"></div>
+          <div className="neuron neuron3"></div>
+          <div className="neuron neuron4"></div>
+          <div className="neuron neuron5"></div>
 
-    <div className="line line1"></div>
-    <div className="line line2"></div>
-    <div className="line line3"></div>
+          <div className="line line1"></div>
+          <div className="line line2"></div>
+          <div className="line line3"></div>
 
-  </div>
+        </div>
 
-  {/* HERO CONTENT */}
-  <motion.div
-    className="heroContent"
-    initial={{ opacity: 0, y: 35 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.7 }}
-  >
+        <motion.div
+          className="heroContent"
+          initial={{ opacity: 0, y: 35 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
 
-    <h1>
-      Building
-      <span className="gradient"> Elite AI Systems </span>
-      For Real-World Deployment
-    </h1>
+          <h1>
+            Building
+            <span className="gradient"> Elite AI Systems </span>
+            For Real-World Deployment
+          </h1>
 
-    <div className="typing">
-      <TypeAnimation
-        sequence={[
-          "RAG Engineer", 1500,
-          "LLM Application Developer", 1500,
-          "AI Systems Architect", 1500,
-        ]}
-        speed={50}
-        repeat={Infinity}
-      />
-    </div>
+          <div className="typing">
 
-    <p className="heroText">
-      I build production-grade AI systems focused on
-      Retrieval-Augmented Generation, semantic search,
-      LLM orchestration, reranking pipelines,
-      grounded responses, and deployable AI applications.
-    </p>
+            <TypeAnimation
+              sequence={[
+                "RAG Engineer", 1500,
+                "LLM Application Developer", 1500,
+                "AI Systems Architect", 1500,
+              ]}
+              speed={50}
+              repeat={Infinity}
+            />
 
-    <div className="heroButtons">
+          </div>
 
-      <a href="#projects" className="primaryBtn">
-        Explore Projects
-      </a>
+          <p className="heroText">
+            I build production-grade AI systems focused on
+            Retrieval-Augmented Generation, semantic search,
+            LLM orchestration, reranking pipelines,
+            grounded responses, and deployable AI applications.
+          </p>
 
-      <a
-        href="/resume.pdf"
-        download
-        className="secondaryBtn"
-      >
-        Download Resume
-      </a>
+          <div className="heroButtons">
 
-    </div>
+            <a href="#projects" className="primaryBtn">
+              Explore Projects
+            </a>
 
-  </motion.div>
+            <a
+              href="/resume.pdf"
+              download
+              className="secondaryBtn"
+            >
+              Download Resume
+            </a>
 
-</section>
+          </div>
+
+        </motion.div>
+
+      </section>
 
       {/* ABOUT */}
       <section id="about" className="section">
@@ -235,11 +268,13 @@ export default function App() {
             >
 
               <div className="projectImageContainer">
+
                 <img
                   src={p.image}
                   alt={p.title}
                   className="projectImage"
                 />
+
               </div>
 
               <div className="projectContent">
@@ -301,7 +336,6 @@ export default function App() {
 
               <div className="popupLayout">
 
-                {/* LEFT */}
                 <div className="popupLeft">
 
                   <img
@@ -312,7 +346,6 @@ export default function App() {
 
                 </div>
 
-                {/* RIGHT */}
                 <div className="popupRight">
 
                   <h2>{active.title}</h2>
@@ -377,21 +410,31 @@ export default function App() {
           LLM Applications, and Freelance AI Projects.
         </p>
 
-        <form className="contactForm">
+        <form
+          ref={formRef}
+          onSubmit={sendEmail}
+          className="contactForm"
+        >
 
           <input
             type="text"
+            name="from_name"
             placeholder="Your Name"
+            required
           />
 
           <input
             type="email"
+            name="from_email"
             placeholder="Your Email"
+            required
           />
 
           <textarea
+            name="message"
             rows="5"
             placeholder="Your Message"
+            required
           />
 
           <button
