@@ -475,7 +475,82 @@ export default function App() {
         </div>
 
       </section>
+{/* FOOTER */}
+<footer className="footer">
+
+  <div className="footerTop">
+
+    {/* LEFT */}
+    <div className="footerBrand">
+
+      <h3>MAWK Portfolio</h3>
+
+      <p>
+        Building production-grade AI systems focused on
+        RAG pipelines, semantic retrieval,
+        LLM applications, and deployable AI products.
+      </p>
 
     </div>
+
+    {/* CENTER */}
+    <div className="footerLinks">
+
+      <h4>Navigation</h4>
+
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+
+    {/* RIGHT */}
+    <div className="footerSocials">
+
+      <h4>Connect</h4>
+
+      <div className="footerIcons">
+
+        <a
+          href="mailto:mawkhan5031@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaEnvelope />
+        </a>
+
+        <a
+          href="https://github.com/maw-khan"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithub />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/muhammad-ali-waris-khan-97a8ba146/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div className="footerBottom">
+
+    © 2026 Muhammad Ali Waris Khan — AI Engineer & RAG Developer
+
+  </div>
+
+</footer>
+
+    </div>
+
+
   );
 }
