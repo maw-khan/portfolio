@@ -111,7 +111,7 @@ const projects = [
     title: "BookNook Python ETL Pipeline",
     desc: "End-to-end Python ETL pipeline integrating PostgreSQL with transformed book, customer, and order data for analytics and visualization.",
     github: "https://github.com/maw-khan/booknook-books-data-pipeline",
-    image: "/projects/booknook/Summary.png",
+    image: "/projects/booknook/6_summary.png",
     architecture: "/projects/booknook/Summry.png",
 
     gallery: [
