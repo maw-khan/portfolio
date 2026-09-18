@@ -70,6 +70,14 @@ const projects = [
     github: "https://github.com/maw-khan/metroCare_hospital_analytics_dashboard",
     image: "/projects/metrocare/metrocare-overview.png",
     architecture: "/projects/metrocare/metrocare-architecture.png",
+    gallery: [
+      "/projects/metrocare/metrocare-overview.png",
+      "/projects/metrocare/metrocare-patients.png",
+      "/projects/metrocare/metrocare-doctors.png",
+      "/projects/metrocare/metrocare-appointments.png",
+      "/projects/metrocare/metrocare-billing.png",
+      "/projects/metrocare/metrocare-summary.png",
+    ],
     stack: ["PostgreSQL", "Power BI", "Power Query", "DAX"],
     flow:
       "CSV Data → PostgreSQL → Power Query → Data Cleaning → Star Schema → DAX Measures → Power BI Dashboards",
@@ -352,10 +360,27 @@ export default function App() {
 
                   <img
                     src={active.architecture}
-                    alt={active.title}
+                    alt={`${active.title} architecture`}
                     className="popupArchitecture"
                   />
-
+                
+                  {active.gallery && (
+                    <div className="projectGallery">
+                
+                      <h3>Dashboard Preview</h3>
+                
+                      {active.gallery.map((img, index) => (
+                        <img
+                          key={index}
+                          src={img}
+                          alt={`${active.title} screenshot ${index + 1}`}
+                          className="galleryImage"
+                        />
+                      ))}
+                
+                    </div>
+                  )}
+                
                 </div>
 
                 <div className="popupRight">
@@ -389,15 +414,16 @@ export default function App() {
                       GitHub Repository
                     </a>
 
-                    <a
-                      href={active.demo}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="secondaryBtn"
-                    >
-                      Live Demo
-                    </a>
-
+                    {active.demo && (
+                      <a
+                        href={active.demo}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="secondaryBtn"
+                      >
+                        Live Demo
+                      </a>
+                    )}
                   </div>
 
                 </div>
