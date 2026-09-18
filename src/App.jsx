@@ -84,6 +84,19 @@ const projects = [
     details:
       "Built an end-to-end healthcare analytics dashboard by importing hospital data into PostgreSQL, performing data preparation and transformation with Power Query, developing a structured star-schema data model, and creating DAX measures for operational and financial analysis. The dashboard provides interactive insights into patients, appointments, doctors, departments, insurance providers, billing, revenue, and hospital performance.",
   },
+
+    {
+    title: "HR Analytics Dashboard",
+    desc: "Interactive Power BI dashboard analyzing employee attrition, workforce demographics, compensation, job roles, satisfaction, performance, and work-life balance.",
+    github: "https://github.com/maw-khan/HR-Analytics-PowerBI-Dashboard",
+    image: "/projects/hr/hr-overview.png",
+    architecture: "/projects/hr/hr-architecture.png",
+    stack: ["Power BI", "Power Query", "DAX", "Data Modeling"],
+    flow:
+      "HR Data → Data Preparation → Data Modeling → DAX Measures → Interactive Visualizations → Workforce Insights",
+    details:
+      "Built an end-to-end HR analytics dashboard in Power BI to transform employee-level workforce data into interactive business insights. The report analyzes employee attrition, department and job-role distribution, demographics, compensation, education, satisfaction, performance, and work-life balance using Power Query, data modeling, DAX measures, and interactive visualizations."
+  },
 ];
 
 export default function App() {
