@@ -64,6 +64,18 @@ const projects = [
     details:
       "Built an academic AI assistant supporting semantic research search, grounded QA, reranking, literature review generation, and research summarization.",
   },
+  {
+    title: "MetroCare Hospital Analytics Dashboard",
+    desc: "End-to-end healthcare analytics solution using PostgreSQL and Power BI to analyze hospital operations, patient activity, appointments, doctors, departments, insurance, and billing.",
+    github: "https://github.com/maw-khan/metroCare_hospital_analytics_dashboard",
+    image: "/projects/metrocare/metrocare-overview.png",
+    architecture: "/projects/metrocare/metrocare-architecture.png",
+    stack: ["PostgreSQL", "Power BI", "Power Query", "DAX"],
+    flow:
+      "CSV Data → PostgreSQL → Power Query → Data Cleaning → Star Schema → DAX Measures → Power BI Dashboards",
+    details:
+      "Built an end-to-end healthcare analytics dashboard by importing hospital data into PostgreSQL, performing data preparation and transformation with Power Query, developing a structured star-schema data model, and creating DAX measures for operational and financial analysis. The dashboard provides interactive insights into patients, appointments, doctors, departments, insurance providers, billing, revenue, and hospital performance.",
+  },
 ];
 
 export default function App() {
