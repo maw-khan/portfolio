@@ -107,6 +107,29 @@ const projects = [
     details:
       "Built an end-to-end HR analytics dashboard in Power BI to transform employee-level workforce data into interactive business insights. The report analyzes employee attrition, department and job-role distribution, demographics, compensation, education, satisfaction, performance, and work-life balance using Power Query, data modeling, DAX measures, and interactive visualizations.",
   },
+  {
+    title: "BookNook Python ETL Pipeline",
+    desc: "End-to-end Python ETL pipeline integrating PostgreSQL with transformed book, customer, and order data for analytics and visualization.",
+    github: "https://github.com/maw-khan/booknook-books-data-pipeline",
+    image: "/projects/booknook/Summary.png",
+    architecture: "/projects/booknook/Summary.png",
+
+    gallery: [
+      "/projects/booknook/6_summary.png",
+      "/projects/booknook/7_bar_plot.png",
+      "/projects/booknook/3_area_chart.png",
+      "/projects/booknook/9_waffle_chart.png",
+      "/projects/booknook/10_folium_map.png",
+    ],
+
+    stack: ["Python", "PostgreSQL", "SQLAlchemy", "Pandas"],
+
+    flow:
+      "Raw Data → Transformation → Validation → PostgreSQL → SQLAlchemy → Analytics → Visualizations",
+
+    details:
+      "Built an end-to-end Python ETL pipeline for transforming and loading book, customer, and order data into PostgreSQL. The project includes database schema creation, data transformation and loading with Python and SQLAlchemy, sequence synchronization, analytical processing, and multiple visualizations including area charts, bar plots, waffle charts, and an interactive Folium map.",
+  },
 ];
 
 export default function App() {
