@@ -90,7 +90,7 @@ const projects = [
     desc: "Interactive Power BI dashboard analyzing employee attrition, workforce demographics, compensation, job roles, satisfaction, performance, and work-life balance.",
     github: "https://github.com/maw-khan/HR-Analytics-PowerBI-Dashboard",
     image: "/projects/hr/executive_overview.png",
-    architecture: "/projects/hr/architecture.png",
+    architecture: "/projects/hr/performance.png",
 
     gallery: [
       "/projects/hr/executive_overview.png",
