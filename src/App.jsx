@@ -219,7 +219,7 @@ export default function App() {
 
           <h1>
             Building
-            <span className="gradient"> AI & Data Systems Systems </span>
+            <span className="gradient"> AI & Data Systems </span>
             For Real-World Deployment
           </h1>
 
