@@ -122,7 +122,7 @@ const projects = [
       "/projects/booknook/10_folium_map.png",
     ],
 
-    stack: ["Python", "PostgreSQL", "SQLAlchemy", "Pandas"],
+    stack: ["Python", "PostgreSQL", "SQLAlchemy", "Pandas", "Matplotlib", "Seaborn", "Folium", "PyWaffle"],
 
     flow:
       "Raw Data → Transformation → Validation → PostgreSQL → SQLAlchemy → Analytics → Visualizations",
