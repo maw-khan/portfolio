@@ -219,7 +219,7 @@ export default function App() {
 
           <h1>
             Building
-            <span className="gradient"> Elite AI Systems </span>
+            <span className="gradient"> AI & Data Systems Systems </span>
             For Real-World Deployment
           </h1>
 
@@ -227,9 +227,12 @@ export default function App() {
 
             <TypeAnimation
               sequence={[
-                "RAG Engineer", 1500,
-                "LLM Application Developer", 1500,
-                "AI Systems Architect", 1500,
+                
+                "AI Engineer", 1500,
+                "RAG / LLM Developer", 1500,
+                "Data & Analytics Engineer", 1500,
+                "Python ETL Developer", 1500,
+                "Power BI Developer", 1500
               ]}
               speed={50}
               repeat={Infinity}
@@ -238,10 +241,9 @@ export default function App() {
           </div>
 
           <p className="heroText">
-            I build production-grade AI systems focused on
-            Retrieval-Augmented Generation, semantic search,
-            LLM orchestration, reranking pipelines,
-            grounded responses, and deployable AI applications.
+            I build AI and data-driven systems across Retrieval-Augmented Generation,
+            LLM applications, Python ETL pipelines, PostgreSQL databases,
+            Power BI analytics, semantic search, and production-ready applications.
           </p>
 
           <div className="heroButtons">
@@ -321,7 +323,7 @@ export default function App() {
       {/* PROJECTS */}
       <section id="projects" className="section">
 
-        <h2>Featured AI Systems</h2>
+        <h2>Featured Projects</h2>
 
         <div className="projectGrid">
 
@@ -570,9 +572,9 @@ export default function App() {
       <h3>MAWK Portfolio</h3>
 
       <p>
-        Building production-grade AI systems focused on
-        RAG pipelines, semantic retrieval,
-        LLM applications, and deployable AI products.
+        I am an AI and data-focused engineer specializing in building intelligent applications and data-driven systems. My work spans Retrieval-Augmented Generation, LLM applications, semantic search, Python-based ETL pipelines, PostgreSQL, data modeling, Power BI, and interactive analytics.
+
+I focus on turning raw data and complex problems into practical, reliable, and deployable solutions — from AI-powered knowledge systems to end-to-end data pipelines and business intelligence dashboards.
       </p>
 
     </div>
