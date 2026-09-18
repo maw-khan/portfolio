@@ -69,7 +69,7 @@ const projects = [
     desc: "End-to-end healthcare analytics solution using PostgreSQL and Power BI to analyze hospital operations, patient activity, appointments, doctors, departments, insurance, and billing.",
     github: "https://github.com/maw-khan/metroCare_hospital_analytics_dashboard",
     image: "/projects/metrocare/metrocare-overview.png",
-    architecture: "/projects/metrocare/metrocare-architecture.png",
+    architecture: "/projects/metrocare/metrocare-architecture.jpg",
     gallery: [
       "/projects/metrocare/metrocare-overview.png",
       "/projects/metrocare/metrocare-patients.png",
