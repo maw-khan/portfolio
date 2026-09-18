@@ -219,7 +219,7 @@ export default function App() {
 
           <h1>
             Building
-            <span className="gradient"> AI & Data Systems </span>
+            <span className="gradient"> Intelligent Systems </span>
             For Real-World Deployment
           </h1>
 
@@ -231,7 +231,7 @@ export default function App() {
                 "AI Engineer", 1500,
                 "RAG / LLM Developer", 1500,
                 "Data & Analytics Engineer", 1500,
-                "Python ETL Developer", 1500,
+                "Machine Learning Developer", 1500,
                 "Power BI Developer", 1500
               ]}
               speed={50}
@@ -241,9 +241,7 @@ export default function App() {
           </div>
 
           <p className="heroText">
-            I build AI and data-driven systems across Retrieval-Augmented Generation,
-            LLM applications, Python ETL pipelines, PostgreSQL databases,
-            Power BI analytics, semantic search, and production-ready applications.
+            I design and build AI-powered systems that transform data, research, and real-world problems into practical intelligent applications. My projects span AI engineering, machine learning, deep learning, data-driven systems, and applied research.
           </p>
 
           <div className="heroButtons">
@@ -272,9 +270,9 @@ export default function App() {
         <h2>About Me</h2>
 
         <p className="aboutText">
-          I am an AI and data-focused engineer specializing in building intelligent applications and data-driven systems. My work spans Retrieval-Augmented Generation, LLM applications, semantic search, Python-based ETL pipelines, PostgreSQL, data modeling, Power BI, and interactive analytics.
+          I am an AI engineer focused on building practical intelligent systems from research and experimentation through implementation and deployment. My work covers a diverse range of AI and data-driven problems, with projects spanning generative AI, machine learning, analytics, data pipelines, and applied research.
 
-I focus on turning raw data and complex problems into practical, reliable, and deployable solutions — from AI-powered knowledge systems to end-to-end data pipelines and business intelligence dashboards.
+I enjoy taking a problem from raw data and initial experimentation to a complete working system — combining appropriate models, data processing, engineering, and deployment techniques based on the requirements of each project.
           I offer the following services:
         </p>
 
