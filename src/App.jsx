@@ -272,48 +272,42 @@ export default function App() {
         <h2>About Me</h2>
 
         <p className="aboutText">
-          I specialize in building modern AI systems with strong focus on
-          Retrieval-Augmented Generation (RAG), semantic retrieval,
-          vector databases, conversational AI, neural reranking,
-          prompt engineering, and production deployment.
+          I am an AI and data-focused engineer specializing in building intelligent applications and data-driven systems. My work spans Retrieval-Augmented Generation, LLM applications, semantic search, Python-based ETL pipelines, PostgreSQL, data modeling, Power BI, and interactive analytics.
 
-          My goal is to engineer AI systems that are not just demos —
-          but scalable, reliable, explainable, and deployable in
-          real-world environments.
-
+I focus on turning raw data and complex problems into practical, reliable, and deployable solutions — from AI-powered knowledge systems to end-to-end data pipelines and business intelligence dashboards.
           I offer the following services:
         </p>
 
         <div className="servicesGrid">
 
           <div className="serviceCard">
-            <h3>RAG Systems</h3>
-            <p>Production-grade Retrieval-Augmented Generation pipelines.</p>
+            <h3>AI Engineering</h3>
+            <p>RAG pipelines, LLM applications, semantic search, embeddings, vector databases, and AI assistants.</p>
           </div>
 
           <div className="serviceCard">
-            <h3>LLM Apps</h3>
-            <p>Custom AI applications using Gemini, LangChain, and Streamlit.</p>
+            <h3>Data Engineering</h3>
+            <p>Python ETL pipelines, data transformation, PostgreSQL databases, SQLAlchemy, and data processing.</p>
           </div>
 
           <div className="serviceCard">
-            <h3>Semantic Search</h3>
-            <p>Vector databases, embeddings, reranking, and retrieval systems.</p>
+            <h3>Business Intelligence</h3>
+            <p>Interactive Power BI dashboards, DAX measures, data modeling, and business analytics.</p>
           </div>
 
           <div className="serviceCard">
-            <h3>Research AI</h3>
-            <p>Academic intelligence systems and literature review assistants.</p>
+            <h3>Data Analytics</h3>
+            <p>Exploratory analysis, workforce analytics, healthcare analytics, visualization, and reporting.</p>
           </div>
 
           <div className="serviceCard">
-            <h3>AI Chatbots</h3>
-            <p>Conversational AI assistants with grounded responses.</p>
+            <h3>AI & Data Applications</h3>
+            <p>End-to-end applications combining data processing, machine learning, AI models, and interactive interfaces.</p>
           </div>
 
           <div className="serviceCard">
-            <h3>Streamlit Deployment</h3>
-            <p>Interactive AI web apps deployed publicly on Streamlit Cloud.</p>
+            <h3>Deployment</h3>
+            <p>Deployable applications using Streamlit, APIs, Docker, and cloud platforms.</p>
           </div>
 
         </div>
